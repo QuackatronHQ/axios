@@ -588,13 +588,13 @@ axios.get('/user', {
   const _: AxiosAdapter = getAdapter('xhr');
   const __: AxiosAdapter = getAdapter(['xhr']);
 
-  // @ts-expect-error
+  // @ts-expect-error - missing adapter argument
   getAdapter();
-  // @ts-expect-error
+  // @ts-expect-error - invalid adapter type
   getAdapter(123);
-  // @ts-expect-error
+  // @ts-expect-error - invalid adapter type
   getAdapter([123]);
-  // @ts-expect-error
+  // @ts-expect-error - too many arguments
   getAdapter('xhr', 'http');
 }
 
@@ -644,7 +644,6 @@ for (const [header, value] of headers) {
       (error: any) => Promise.reject(error)
   );
 }
-
 {
   const config: AxiosRequestConfig = {headers: new AxiosHeaders({foo: 1})};
 
