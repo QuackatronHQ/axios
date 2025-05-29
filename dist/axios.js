@@ -3181,7 +3181,7 @@
           case "end":
             return _context2.stop();
         }
-      }, _callee, null, [[2, 14, 18, 28], [19,, 23, 27]]);
+      }, _callee, null, [[2, 14, 18, 28], [19, 23, 27]]);
     }));
     return function readBytes(_x, _x2) {
       return _ref.apply(this, arguments);
@@ -3231,7 +3231,7 @@
           case "end":
             return _context3.stop();
         }
-      }, _callee2, null, [[4,, 16, 20]]);
+      }, _callee2, null, [[4, 16, 20]]);
     }));
     return function readStream(_x3) {
       return _ref2.apply(this, arguments);
